@@ -25,6 +25,10 @@ body {
   font-family: "Poppins", sans-serif;
   overflow: hidden;
 }
+.cookie-container .cookie {
+  overflow: visible;
+  transform: scale(0.6);
+}
 .cookie-container .text .cookie-title {
   font-size: 1rem;
   font-weight: lighter;

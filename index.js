@@ -18,6 +18,18 @@ tl.fromTo(
 );
 tl.fromTo(".text", { x: 50, opacity: 0 }, { x: 0, opacity: 1 }, "<");
 
+// crumb jump
+tl.fromTo(
+  ".cookie",
+  { y: 0, rotation: "0deg" },
+  { y: -20, yoyo: true, repeat: -1, rotation: "-20deg" }
+); // -1 causes bounce infinitely. If need once 1, twice then 2
+tl.fromTo(
+  "#crumbs",
+  { y: 0, rotation: "0deg" },
+  { y: -20, yoyo: true, repeat: -1 },
+  "<"
+);
 // Fading the cookie out
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
